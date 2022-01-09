@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discounts</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Porcentage and discounts
+        </h1>
+        <p>
+            In this application you will be able to calculate the discount of a price
+        </p>
+
+    </header>
+    <h2>Discounts</h2>
+
+    <!--Discount-->
+    <section>
+        <h3>Calculate the discount</h3>
+        <form>
+            <label for="originalPrice">
+                Enter the original price of the product
+            </label>
+            <input type="number" id="originalPrice">
+
+            <label for="coupon">
+                Enter the coupon to apply the discount
+            </label>
+            <input type="text" id="coupon">
+
+            <button type="button" onclick="calculateDiscount()">
+                Calculate discount
+            </button>
+
+            <p id="discountResult"></p> <!--Prints the data-->
+
+        </form>
+    </section>
+    <script src="./discounts.js"></script>
+</body>
+</html>
