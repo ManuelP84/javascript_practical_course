@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary</title>
+</head>
+<body>
+    <header>
+        <h1>Salaries</h1>
+        <p>
+            In this simple application you will be able to calculate the mean of a list of salaries
+        </p>
+    </header>
+    
+
+    <!--Pondered average-->
+    <section>
+        <h3>Calculates the the median from a list of salaries and the median from the top 10 % best payed salaries</h3>
+        <form>
+            <!--Salary 1-->
+            <label for="inputName1">
+                Please enter the name
+            </label>
+            <input id="inputName1" type="text">
+            <br>
+            <label for="inputSalary1">
+                Please enter the salary
+            </label>
+            <input id="inputSalary1" type="number">
+            <br>
+            <label for="inputCurrency1">
+                Please enter the currency
+            </label>
+            <input id="inputCurrency1" type="text">
+            <br>
+            <br>
+
+            <!--Salary 2-->
+            <label for="inputName2">
+                Please enter the name
+            </label>
+            <input id="inputName2" type="text">
+            <br>
+            <label for="inputSalary2">
+                Please enter the salary
+            </label>
+            <input id="inputSalary2" type="number">
+            <br>
+            <label for="inputCurrency2">
+                Please enter the currency
+            </label>
+            <input id="inputCurrency2" type="text">
+            <br>
+            <br>
+
+            <!--Salary 3-->
+            <label for="inputName3">
+                Please enter the name
+            </label>
+            <input id="inputName3" type="text">
+            <br>
+            <label for="inputSalary3">
+                Please enter the salary
+            </label>
+            <input id="inputSalary3" type="number">
+            <br>
+            <label for="inputCurrency3">
+                Please enter the currency
+            </label>
+            <input id="inputCurrency3" type="text">
+            <br>
+            <br>
+
+            <!--Salary 4-->
+            <label for="inputName4">
+                Please enter the name
+            </label>
+            <input id="inputName4" type="text">
+            <br>
+            <label for="inputSalary4">
+                Please enter the salary
+            </label>
+            <input id="inputSalary4" type="number">
+            <br>
+            <label for="inputCurrency4">
+                Please enter the currency
+            </label>
+            <input id="inputCurrency4" type="text">
+            <br>
+            <br>
+
+            <!--Salary 5-->
+            <label for="inputName5">
+                Please enter the name
+            </label>
+            <input id="inputName5" type="text">
+            <br>
+            <label for="inputSalary5">
+                Please enter the salary
+            </label>
+            <input id="inputSalary5" type="number">
+            <br>
+            <label for="inputCurrency5">
+                Please enter the currency
+            </label>
+            <input id="inputCurrency5" type="text">
+        </form>
+
+        <button type="button" onclick="calculateMedian()">
+            Calculate the median!
+        </button>
+
+        <button type="button" onclick="calculateMedianTop()">
+            Calculate the median Top!
+        </button>
+
+        <p id="ponderedAveragedResult"></p>
+
+        <p id="ponderedAveragedTopResult"></p>
+
+    </section>
+
+    <script src="./salary.js"></script>
+    <script src="./analysis.js"></script>
+    
+</body>
+</html>
