@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Statistics
+        </h1>
+        <p>
+            In this app you will be able to calculate the mean, median, and mode.
+        </p>
+    </header>
+    
+    <!--Arithmetic Mean-->
+    <section>
+        <h2>Calculates the average from a list of numbers</h2>
+        <form>
+            <label for="inputNumbers1">
+                Please enter the list of numbers.
+                Note: You must follow the next format (num1,num2,num3....)
+            </label>
+            <input id="inputNumbers1" type="text">
+            <button type="button" onclick="calculateArithmeticMean()">
+                Calculate Arithmetic Mean!
+            </button>
+            <p id="averagedResult"></p>
+        </form>
+    </section>
+        
+
+    <!--Median-->
+    <section>
+        <h2>Calculates the Median from a list of numbers</h2>
+        <form>
+            <label for="inputNumbers2">
+                Please enter the list of numbers.
+                Note: You must follow the next format (num1,num2,num3....)
+            </label>
+            <input id="inputNumbers2" type="text">
+            <button type="button" onclick="calculateMedian()">
+                Calculate Median!
+            </button>
+            <p id="medianResult"></p>
+        </form>
+    </section>
+
+    <!--Mode-->
+    <section>
+        <h2>Calculates the Mode from a list of numbers</h2>
+        <form>
+            <label for="inputNumbers3">
+                Please enter the list of numbers.
+                Note: You must follow the next format (num1,num2,num3....)
+            </label>            
+            <input id="inputNumbers3" type="text">
+            <button type="button" onclick="calculateMode()">
+                Calculate Mode!
+            </button>
+            <p>Result format: (num, num_times)</p>
+            <p id="modenResult"></p>
+        </form>
+    </section>
+
+    <!--Pondered average-->
+    <section>
+        <h2>Calculates the pondered average from a list of notes objects</h2>
+        <form>
+            <!--Course 1-->
+            <label for="inputCourse1">
+                Please enter the course 1
+            </label>
+            <input id="inputCourse1" type="text">
+            <br>
+            <label for="inputNote1">
+                Please enter the note
+            </label>
+            <input id="inputNote1" type="number">
+            <br>
+            <label for="inputCredits1">
+                Please enter the credits
+            </label>
+            <input id="inputCredits1" type="number">
+            <br>
+            <br>
+
+            <!--Course 2-->
+            <label for="inputCourse2">
+                Please enter the course 2
+            </label>
+            <input id="inputCourse2" type="text">
+            <br>
+            <label for="inputNote2">
+                Please enter the note
+            </label>
+            <input id="inputNote2" type="number">
+            <br>
+            <label for="inputCredits2">
+                Please enter the credits
+            </label>
+            <input id="inputCredits2" type="number">
+            <br>
+            <br>
+
+            <!--Course 3-->
+            <label for="inputCourse3">
+                Please enter the course 3
+            </label>
+            <input id="inputCourse3" type="text">
+            <br>
+            <label for="inputNote3">
+                Please enter the note
+            </label>
+            <input id="inputNote3" type="number">
+            <br>
+            <label for="inputCredits3">
+                Please enter the credits
+            </label>
+            <input id="inputCredits3" type="number">
+            <br>
+            <br>
+
+            <!--Course 4-->
+            <label for="inputCourse4">
+                Please enter the course 4
+            </label>
+            <input id="inputCourse4" type="text">
+            <br>
+            <label for="inputNote4">
+                Please enter the note
+            </label>
+            <input id="inputNote4" type="number">
+            <br>
+            <label for="inputCredits4">
+                Please enter the credits
+            </label>
+            <input id="inputCredits4" type="number">
+            <br>
+            <br>
+
+            <!--Course 5-->
+            <label for="inputCourse5">
+                Please enter the course 5
+            </label>
+            <input id="inputCourse5" type="text">
+            <br>
+            <label for="inputNote5">
+                Please enter the note
+            </label>
+            <input id="inputNote5" type="number">
+            <br>
+            <label for="inputCredits5">
+                Please enter the credits
+            </label>
+            <input id="inputCredits5" type="number">
+        </form>
+
+        <button type="button" onclick="calculatePonderedAveraged()">
+            Calculate pondered average!
+        </button>
+
+        <p id="ponderedAveragedResult"></p>
+
+    </section>
+    
+
+    <script src="./statistics.js"></script>
+</body>
+</html>
